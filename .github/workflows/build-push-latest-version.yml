@@ -45,7 +45,7 @@ jobs:
         with:
           push: true
           tags: |
-            dcagatay/azp-agent-dind:latest
-            dcagatay/azp-agent-dind:${{steps.version_provider.outputs.version}}
+            trihatmaja/azp-agent-dind:latest
+            trihatmaja/azp-agent-dind:${{steps.version_provider.outputs.version}}
           build-args: |
             AGENT_VERSION=${{steps.version_provider.outputs.version}}
